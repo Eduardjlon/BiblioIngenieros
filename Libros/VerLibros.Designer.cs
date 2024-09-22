@@ -39,7 +39,7 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(462, 40);
+            btnBuscar.Location = new Point(446, 38);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(146, 32);
             btnBuscar.TabIndex = 9;
@@ -58,7 +58,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(952, 42);
+            label1.Location = new Point(703, 38);
             label1.Name = "label1";
             label1.Size = new Size(101, 20);
             label1.TabIndex = 7;
@@ -69,7 +69,7 @@
             // 
             btnAgregar.Image = Properties.Resources.agregar;
             btnAgregar.InitialImage = Properties.Resources.agregar;
-            btnAgregar.Location = new Point(899, 30);
+            btnAgregar.Location = new Point(650, 26);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(47, 47);
             btnAgregar.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -79,16 +79,17 @@
             // 
             // listaLibros
             // 
+            listaLibros.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             listaLibros.Location = new Point(18, 108);
             listaLibros.Name = "listaLibros";
-            listaLibros.Size = new Size(1089, 529);
+            listaLibros.Size = new Size(1208, 529);
             listaLibros.TabIndex = 5;
             // 
             // VerLibros
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1124, 667);
+            AutoScaleDimensions = new SizeF(120F, 120F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            ClientSize = new Size(1243, 667);
             Controls.Add(btnBuscar);
             Controls.Add(txtBoxBuscar);
             Controls.Add(label1);

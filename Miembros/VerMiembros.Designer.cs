@@ -39,6 +39,7 @@
             // 
             // listaMiembros
             // 
+            listaMiembros.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             listaMiembros.Location = new Point(25, 116);
             listaMiembros.Name = "listaMiembros";
             listaMiembros.Size = new Size(1089, 529);
@@ -48,7 +49,7 @@
             // 
             btnAgregar.Image = Properties.Resources.agregar;
             btnAgregar.InitialImage = Properties.Resources.agregar;
-            btnAgregar.Location = new Point(906, 38);
+            btnAgregar.Location = new Point(661, 36);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(47, 47);
             btnAgregar.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -59,7 +60,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(959, 50);
+            label1.Location = new Point(714, 48);
             label1.Name = "label1";
             label1.Size = new Size(128, 20);
             label1.TabIndex = 2;

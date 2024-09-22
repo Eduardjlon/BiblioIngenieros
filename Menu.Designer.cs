@@ -47,9 +47,9 @@
             panelSideMenu.Controls.Add(panelLogo);
             panelSideMenu.Dock = DockStyle.Left;
             panelSideMenu.Location = new Point(0, 0);
-            panelSideMenu.Margin = new Padding(2);
+            panelSideMenu.Margin = new Padding(2, 3, 2, 3);
             panelSideMenu.Name = "panelSideMenu";
-            panelSideMenu.Size = new Size(194, 421);
+            panelSideMenu.Size = new Size(222, 561);
             panelSideMenu.TabIndex = 0;
             panelSideMenu.Paint += panelFondo_Paint;
             // 
@@ -58,10 +58,10 @@
             panelPrestamoSubMenu.BackColor = Color.FromArgb(64, 64, 64);
             panelPrestamoSubMenu.Controls.Add(botonPrestamo);
             panelPrestamoSubMenu.Dock = DockStyle.Top;
-            panelPrestamoSubMenu.Location = new Point(0, 259);
-            panelPrestamoSubMenu.Margin = new Padding(2);
+            panelPrestamoSubMenu.Location = new Point(0, 344);
+            panelPrestamoSubMenu.Margin = new Padding(2, 3, 2, 3);
             panelPrestamoSubMenu.Name = "panelPrestamoSubMenu";
-            panelPrestamoSubMenu.Size = new Size(194, 32);
+            panelPrestamoSubMenu.Size = new Size(222, 43);
             panelPrestamoSubMenu.TabIndex = 5;
             // 
             // botonPrestamo
@@ -73,10 +73,10 @@
             botonPrestamo.FlatStyle = FlatStyle.Flat;
             botonPrestamo.ForeColor = Color.White;
             botonPrestamo.Location = new Point(0, 0);
-            botonPrestamo.Margin = new Padding(2);
+            botonPrestamo.Margin = new Padding(2, 3, 2, 3);
             botonPrestamo.Name = "botonPrestamo";
-            botonPrestamo.Padding = new Padding(27, 0, 0, 0);
-            botonPrestamo.Size = new Size(194, 30);
+            botonPrestamo.Padding = new Padding(31, 0, 0, 0);
+            botonPrestamo.Size = new Size(222, 40);
             botonPrestamo.TabIndex = 0;
             botonPrestamo.Text = "Solicitar Prestamo";
             botonPrestamo.TextAlign = ContentAlignment.MiddleLeft;
@@ -91,11 +91,11 @@
             Prestamo.FlatAppearance.MouseOverBackColor = Color.Blue;
             Prestamo.FlatStyle = FlatStyle.Flat;
             Prestamo.ForeColor = Color.White;
-            Prestamo.Location = new Point(0, 225);
-            Prestamo.Margin = new Padding(2);
+            Prestamo.Location = new Point(0, 299);
+            Prestamo.Margin = new Padding(2, 3, 2, 3);
             Prestamo.Name = "Prestamo";
-            Prestamo.Padding = new Padding(8, 0, 0, 0);
-            Prestamo.Size = new Size(194, 34);
+            Prestamo.Padding = new Padding(9, 0, 0, 0);
+            Prestamo.Size = new Size(222, 45);
             Prestamo.TabIndex = 4;
             Prestamo.Text = "Prestamos";
             Prestamo.TextAlign = ContentAlignment.MiddleLeft;
@@ -107,10 +107,10 @@
             panelLibrosSubMenu.BackColor = Color.FromArgb(64, 64, 64);
             panelLibrosSubMenu.Controls.Add(botonLibros);
             panelLibrosSubMenu.Dock = DockStyle.Top;
-            panelLibrosSubMenu.Location = new Point(0, 194);
-            panelLibrosSubMenu.Margin = new Padding(2);
+            panelLibrosSubMenu.Location = new Point(0, 258);
+            panelLibrosSubMenu.Margin = new Padding(2, 3, 2, 3);
             panelLibrosSubMenu.Name = "panelLibrosSubMenu";
-            panelLibrosSubMenu.Size = new Size(194, 31);
+            panelLibrosSubMenu.Size = new Size(222, 41);
             panelLibrosSubMenu.TabIndex = 3;
             // 
             // botonLibros
@@ -122,10 +122,10 @@
             botonLibros.FlatStyle = FlatStyle.Flat;
             botonLibros.ForeColor = Color.White;
             botonLibros.Location = new Point(0, 0);
-            botonLibros.Margin = new Padding(2);
+            botonLibros.Margin = new Padding(2, 3, 2, 3);
             botonLibros.Name = "botonLibros";
-            botonLibros.Padding = new Padding(27, 0, 0, 0);
-            botonLibros.Size = new Size(194, 30);
+            botonLibros.Padding = new Padding(31, 0, 0, 0);
+            botonLibros.Size = new Size(222, 40);
             botonLibros.TabIndex = 0;
             botonLibros.Text = "Administrar Libros";
             botonLibros.TextAlign = ContentAlignment.MiddleLeft;
@@ -140,11 +140,11 @@
             btonLibros.FlatAppearance.MouseOverBackColor = Color.Blue;
             btonLibros.FlatStyle = FlatStyle.Flat;
             btonLibros.ForeColor = Color.White;
-            btonLibros.Location = new Point(0, 160);
-            btonLibros.Margin = new Padding(2);
+            btonLibros.Location = new Point(0, 213);
+            btonLibros.Margin = new Padding(2, 3, 2, 3);
             btonLibros.Name = "btonLibros";
-            btonLibros.Padding = new Padding(8, 0, 0, 0);
-            btonLibros.Size = new Size(194, 34);
+            btonLibros.Padding = new Padding(9, 0, 0, 0);
+            btonLibros.Size = new Size(222, 45);
             btonLibros.TabIndex = 2;
             btonLibros.Text = "Libros";
             btonLibros.TextAlign = ContentAlignment.MiddleLeft;
@@ -156,10 +156,10 @@
             panelMiembrosSubMenu.BackColor = Color.FromArgb(64, 64, 64);
             panelMiembrosSubMenu.Controls.Add(botonMiembros);
             panelMiembrosSubMenu.Dock = DockStyle.Top;
-            panelMiembrosSubMenu.Location = new Point(0, 129);
-            panelMiembrosSubMenu.Margin = new Padding(2);
+            panelMiembrosSubMenu.Location = new Point(0, 172);
+            panelMiembrosSubMenu.Margin = new Padding(2, 3, 2, 3);
             panelMiembrosSubMenu.Name = "panelMiembrosSubMenu";
-            panelMiembrosSubMenu.Size = new Size(194, 31);
+            panelMiembrosSubMenu.Size = new Size(222, 41);
             panelMiembrosSubMenu.TabIndex = 1;
             // 
             // botonMiembros
@@ -171,10 +171,10 @@
             botonMiembros.FlatStyle = FlatStyle.Flat;
             botonMiembros.ForeColor = Color.White;
             botonMiembros.Location = new Point(0, 0);
-            botonMiembros.Margin = new Padding(2);
+            botonMiembros.Margin = new Padding(2, 3, 2, 3);
             botonMiembros.Name = "botonMiembros";
-            botonMiembros.Padding = new Padding(27, 0, 0, 0);
-            botonMiembros.Size = new Size(194, 30);
+            botonMiembros.Padding = new Padding(31, 0, 0, 0);
+            botonMiembros.Size = new Size(222, 40);
             botonMiembros.TabIndex = 0;
             botonMiembros.Text = "Administrar Miembros";
             botonMiembros.TextAlign = ContentAlignment.MiddleLeft;
@@ -189,11 +189,11 @@
             Miembro.FlatAppearance.MouseOverBackColor = Color.Blue;
             Miembro.FlatStyle = FlatStyle.Flat;
             Miembro.ForeColor = Color.White;
-            Miembro.Location = new Point(0, 95);
-            Miembro.Margin = new Padding(2);
+            Miembro.Location = new Point(0, 127);
+            Miembro.Margin = new Padding(2, 3, 2, 3);
             Miembro.Name = "Miembro";
-            Miembro.Padding = new Padding(8, 0, 0, 0);
-            Miembro.Size = new Size(194, 34);
+            Miembro.Padding = new Padding(9, 0, 0, 0);
+            Miembro.Size = new Size(222, 45);
             Miembro.TabIndex = 0;
             Miembro.Text = "Miembros";
             Miembro.TextAlign = ContentAlignment.MiddleLeft;
@@ -207,32 +207,33 @@
             panelLogo.BackgroundImageLayout = ImageLayout.Stretch;
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
-            panelLogo.Margin = new Padding(2);
+            panelLogo.Margin = new Padding(2, 3, 2, 3);
             panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(194, 95);
+            panelLogo.Size = new Size(222, 127);
             panelLogo.TabIndex = 0;
             // 
             // panelContenido
             // 
             panelContenido.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panelContenido.AutoSize = true;
             panelContenido.BackgroundImageLayout = ImageLayout.None;
-            panelContenido.Location = new Point(198, 0);
-            panelContenido.Margin = new Padding(2);
+            panelContenido.Location = new Point(226, 0);
+            panelContenido.Margin = new Padding(2, 3, 2, 3);
             panelContenido.Name = "panelContenido";
-            panelContenido.Size = new Size(572, 421);
+            panelContenido.Size = new Size(941, 561);
             panelContenido.TabIndex = 1;
             panelContenido.Paint += panelContenido_Paint;
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1022, 421);
+            ClientSize = new Size(1168, 561);
             Controls.Add(panelContenido);
             Controls.Add(panelSideMenu);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2);
+            Margin = new Padding(2, 3, 2, 3);
             Name = "Menu";
             Text = "Biblioteca";
             panelSideMenu.ResumeLayout(false);
@@ -240,6 +241,7 @@
             panelLibrosSubMenu.ResumeLayout(false);
             panelMiembrosSubMenu.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         private Panel panelSideMenu;
@@ -256,3 +258,4 @@
         private Panel panelLogo;
     }
 }
+//Modificacion de dimensiones
