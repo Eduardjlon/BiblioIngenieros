@@ -2,15 +2,7 @@
 using BibliotecaHerecia.Libros;
 using BibliotecaHerecia.Prestamos;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Text;
 
 namespace BibliotecaHerecia
 {
@@ -21,26 +13,28 @@ namespace BibliotecaHerecia
             InitializeComponent();
             CustomizeDesign();
         }
+
+        // Miembros
         private void CustomizeDesign()
         {
-            panelLibrosSubMenu.Visible = false;
             panelMiembrosSubMenu.Visible = false;
+            panelLibrosSubMenu.Visible = false;
             panelPrestamoSubMenu.Visible = false;
-
         }
 
         private void hideSubMenu()
         {
-            if (panelLibrosSubMenu.Visible == true)
-                panelLibrosSubMenu.Visible = false;
-            if (panelMiembrosSubMenu.Visible == true)
+            if (panelMiembrosSubMenu.Visible)
                 panelMiembrosSubMenu.Visible = false;
-            if (panelPrestamoSubMenu.Visible == true)
+            if (panelLibrosSubMenu.Visible)
+                panelLibrosSubMenu.Visible = false;
+            if (panelPrestamoSubMenu.Visible)
                 panelPrestamoSubMenu.Visible = false;
         }
+
         private void showSubMenu(Panel subMenu)
         {
-            if (subMenu.Visible == false)
+            if (!subMenu.Visible)
             {
                 hideSubMenu();
                 subMenu.Visible = true;
@@ -48,37 +42,21 @@ namespace BibliotecaHerecia
             else
                 subMenu.Visible = false;
         }
+
         private void Miembro_Click(object sender, EventArgs e)
         {
             showSubMenu(panelMiembrosSubMenu);
         }
-        private void ShowLibro(Panel panelMiembros)
-        {
-            throw new NotImplementedException();
-        }
 
         private void Miembros_Click(object sender, EventArgs e)
         {
-            Form verMiembrosForm = new VerMiembros();
-            verMiembrosForm.Show();
+            AbrirFormularioEnPanel(new VerMiembros());
         }
 
+        // Libros
         private void botonLibros_Click(object sender, EventArgs e)
         {
-            Form verLibrosForm = new VerLibros();
-            verLibrosForm.Show();
-        }
-
-        private void botonPrestamo_Click(object sender, EventArgs e)
-        {
-            Form realizarPrestamoForm = new RealizarPrestamo();
-            realizarPrestamoForm.Show();
-
-        }
-
-        private void panelFondo_Paint(object sender, PaintEventArgs e)
-        {
-
+            AbrirFormularioEnPanel(new VerLibros());
         }
 
         private void btonLibros_Click(object sender, EventArgs e)
@@ -86,19 +64,41 @@ namespace BibliotecaHerecia
             showSubMenu(panelLibrosSubMenu);
         }
 
+        // Préstamos
+        private void botonPrestamo_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new RealizarPrestamo());
+        }
+
         private void Prestamo_Click(object sender, EventArgs e)
         {
             showSubMenu(panelPrestamoSubMenu);
         }
 
+        private void AbrirFormularioEnPanel(Form formulario)
+        {
+            panelContenido.Controls.Clear(); // Limpiar el panel de contenido
+            formulario.TopLevel = false; // No es un formulario independiente
+            formulario.FormBorderStyle = FormBorderStyle.None; // Sin bordes
+            formulario.Dock = DockStyle.Fill; // Llenar el panel
+            panelContenido.Controls.Add(formulario); // Añadir el formulario al panel
+            formulario.Show(); // Mostrar el formulario
+        }
+
+        private void panelFondo_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
         private void panelLogo_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
+        }
 
+        private void panelContenido_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }
