@@ -11,6 +11,7 @@ namespace BibliotecaHerecia.Prestamos
         public ToastForm()
         {
             InitializeComponent();
+
         }
 
         private void ToastForm_Load(object sender, EventArgs e)
