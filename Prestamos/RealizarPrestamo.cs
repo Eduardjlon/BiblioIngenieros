@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace BibliotecaHerecia.Prestamos
 {
+
     public partial class RealizarPrestamo : Form
     {
         public RealizarPrestamo()
@@ -28,8 +29,8 @@ namespace BibliotecaHerecia.Prestamos
             Prestamo nuevoPrestamo = new Prestamo(DateTime.Now, fechaDevolucionDatePicker.Value, libroSeleccionado, miembroSeleccionado);
             AppState.Instance.bibliotecaActual.RealizarPrestamo(nuevoPrestamo);
 
-            MessageBox.Show($"Prestamo {nuevoPrestamo.Id} realizado con éxito, hay {AppState.Instance.bibliotecaActual.prestamos.Count()} prestamos actualmente");
-            this.Close();
+            ToastForm toast = new ToastForm();
+            toast.Show();
         }
 
         private void inicializarMiembros()
@@ -58,5 +59,8 @@ namespace BibliotecaHerecia.Prestamos
         {
             inicializarLibros();
         }
+
+          
+      
     }
 }
