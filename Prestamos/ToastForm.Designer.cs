@@ -34,6 +34,7 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             toastTimer = new System.Windows.Forms.Timer(components);
+            toastHide = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -83,6 +84,11 @@
             toastTimer.Interval = 10;
             toastTimer.Tick += toastTimer_Tick;
             // 
+            // toastHide
+            // 
+            toastHide.Interval = 10;
+            toastHide.Tick += toastHide_Tick;
+            // 
             // ToastForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -108,5 +114,6 @@
         private Label label2;
         private PictureBox pictureBox1;
         private System.Windows.Forms.Timer toastTimer;
+        private System.Windows.Forms.Timer toastHide;
     }
 }

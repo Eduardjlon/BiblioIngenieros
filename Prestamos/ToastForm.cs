@@ -24,8 +24,8 @@ namespace BibliotecaHerecia.Prestamos
             int screenwidth = Screen.PrimaryScreen.WorkingArea.Width;
             int screenheight = Screen.PrimaryScreen.WorkingArea.Height;
 
-            toastX = screenwidth - this.Width - 10;  // Ajuste con un pequeño margen
-            toastY = screenheight - this.Height - 10; // Ajuste con un pequeño margen
+            toastX = screenwidth - this.Width - 10;
+            toastY = screenheight - this.Height - 10;
 
 
             this.Location = new Point(toastX, toastY);
@@ -45,9 +45,28 @@ namespace BibliotecaHerecia.Prestamos
         {
             toastY -= 10;
             this.Location = new Point(toastX, toastY);
-            if (toastY <= 760) {
+            if (toastY <= 900)
+            {
                 toastTimer.Stop();
+                toastHide.Start();
 
+            }
+        }
+        int y = 100;
+        private void toastHide_Tick(object sender, EventArgs e)
+        {
+            y--;
+            if (y <= 0)
+            {
+                toastY += 1;
+                this.Location = new Point(toastX, toastY += 10);
+                if (toastY > 800)
+                {
+                    toastHide.Stop();
+                    y = 100;
+                    this.Close();
+
+                }
             }
         }
     }
