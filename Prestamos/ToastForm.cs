@@ -66,6 +66,8 @@ namespace BibliotecaHerecia.Prestamos
                     toastHide.Stop();
                     y = 100;
                     this.Close();
+                    // toast foarm epico, felicidades al chef.
+                    // borraron mi chamba, pipipipi.
 
                 }
             }
