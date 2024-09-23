@@ -196,6 +196,7 @@
             btnActualizar.TabIndex = 27;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // txtBoxTitulo
             // 
