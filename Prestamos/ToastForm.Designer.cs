@@ -28,17 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-
+            components = new System.ComponentModel.Container();
             panel1 = new Panel();
             label1 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
+            toastTimer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // Esto sirve para vincular el evento Load
-            this.Load += new System.EventHandler(this.ToastForm_Load);
-
-
             // 
             // panel1
             // 
@@ -80,6 +77,12 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
+            // toastTimer
+            // 
+            toastTimer.Enabled = true;
+            toastTimer.Interval = 10;
+            toastTimer.Tick += toastTimer_Tick;
+            // 
             // ToastForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -92,6 +95,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "ToastForm";
             Text = "ToastForm";
+            Load += ToastForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -103,5 +107,6 @@
         private Label label1;
         private Label label2;
         private PictureBox pictureBox1;
+        private System.Windows.Forms.Timer toastTimer;
     }
 }

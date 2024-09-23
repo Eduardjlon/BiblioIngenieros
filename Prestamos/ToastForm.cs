@@ -27,18 +27,28 @@ namespace BibliotecaHerecia.Prestamos
             toastX = screenwidth - this.Width - 10;  // Ajuste con un pequeño margen
             toastY = screenheight - this.Height - 10; // Ajuste con un pequeño margen
 
-         
+
             this.Location = new Point(toastX, toastY);
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toastTimer_Tick(object sender, EventArgs e)
+        {
+            toastY -= 10;
+            this.Location = new Point(toastX, toastY);
+            if (toastY <= 760) {
+                toastTimer.Stop();
+
+            }
         }
     }
 }
