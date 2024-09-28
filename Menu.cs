@@ -100,5 +100,5 @@ namespace BibliotecaHerecia
         private void panelContenido_Paint(object sender, PaintEventArgs e)
         {
         }
-    }
+    } //Y mi chamba x2? 
 }
