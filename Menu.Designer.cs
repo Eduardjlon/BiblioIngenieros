@@ -198,7 +198,7 @@
             Miembro.Text = "Miembros";
             Miembro.TextAlign = ContentAlignment.MiddleLeft;
             Miembro.UseVisualStyleBackColor = true;
-            Miembro.Click += Miembros_Click;
+            Miembro.Click += Miembro_Click;
             // 
             // panelLogo
             // 
